@@ -5,11 +5,16 @@ nav {
         .displayflex(space-between, center);
         padding-top: @vpadding;
         padding-bottom: @vpadding;
+        border-bottom: 2px dashed @navigation-border;
         .adiv a {
             .fasttxt();
             text-decoration: none;
             color: black;
             padding-right: 2.9rem;
+        }
+        @media @mobile {
+            flex-direction: column;
+            margin-top: 2rem;
         }
     }
 }
