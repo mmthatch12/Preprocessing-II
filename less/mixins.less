@@ -6,3 +6,26 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+// Button Formating
+.btnmix(@bcolor: @button-bg, @bradius, @tcolor) {
+    text-align: center;
+    height: 4.2rem;
+    .fasttxt();
+    font-size: 1.8rem;
+    width: 20rem;
+    padding: 1.3rem;
+    border: @button-border;
+    background: @bcolor;
+    border-radius: @bradius;
+    color: @tcolor;
+
+}
+
+// Text
+
+.fasttxt () {
+    font-family: 'Roboto', sans-serif;
+    color: @font-color;
+    font-size: 1.6rem;
+}
