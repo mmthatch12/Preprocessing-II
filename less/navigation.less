@@ -6,6 +6,14 @@ nav {
         padding-top: @vpadding;
         padding-bottom: @vpadding;
         border-bottom: 2px dashed @navigation-border;
+        h1 {
+            .keyframes(fade-in;{
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+                });
+        
+            .animation(fade-in 0.2s linear infinite alternate);
+        }
         .adiv a {
             .fasttxt();
             text-decoration: none;

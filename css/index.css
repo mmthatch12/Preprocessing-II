@@ -176,6 +176,35 @@ nav .navdiv {
   padding-bottom: 3rem;
   border-bottom: 2px dashed #C0C0C0;
 }
+nav .navdiv h1 {
+  -webkit-animation: fade-in 0.2s linear infinite alternate;
+  -moz-animation: fade-in 0.2s linear infinite alternate;
+  animation: fade-in 0.2s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 nav .navdiv .adiv a {
   font-family: 'Roboto', sans-serif;
   color: #212529;
